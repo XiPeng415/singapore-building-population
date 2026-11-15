@@ -1,0 +1,19 @@
+{
+  "2025": {
+    "source_controls_match": true,
+    "all_building_values_match_independent_calculation": true,
+    "max_supported_subzone_error": 1.4551915228366852e-11,
+    "unallocated_population": 0,
+    "csv_gpkg_s2_totals_match": true,
+    "nonresidential_and_known_future_buildings_zero": true
+  },
+  "2026": {
+    "source_controls_match": true,
+    "all_building_values_match_independent_calculation": true,
+    "max_supported_subzone_error": 1.4551915228366852e-11,
+    "unallocated_population": 0,
+    "csv_gpkg_s2_totals_match": true,
+    "nonresidential_and_known_future_buildings_zero": true
+  },
+  "source_inputs_unchanged": true
+}

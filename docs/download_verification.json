@@ -1,0 +1,35 @@
+{
+  "checksums_match": true,
+  "compressed_file_matches_geojson": true,
+  "features": 118782,
+  "residential_features": 85007,
+  "crs": "EPSG:4326",
+  "population_only_properties": [
+    "building_archetype",
+    "is_residential",
+    "SUBZONE_C",
+    "SUBZONE_N",
+    "PLN_AREA_N",
+    "resident_pop_2025",
+    "resident_pop_2026_provisional",
+    "allocation_status_2025",
+    "allocation_status_2026"
+  ],
+  "invalid_geometries_in_export": 0,
+  "years": {
+    "2025": {
+      "allocated_residents": 4204560.0,
+      "null_buildings": 38,
+      "max_subzone_residual": 1.4551915228366852e-11,
+      "max_independent_building_difference": 4.547473508864641e-13,
+      "geojson_csv_population_match": true
+    },
+    "2026": {
+      "allocated_residents": 4231649.999999999,
+      "null_buildings": 38,
+      "max_subzone_residual": 1.4551915228366852e-11,
+      "max_independent_building_difference": 9.094947017729282e-13,
+      "geojson_csv_population_match": true
+    }
+  }
+}

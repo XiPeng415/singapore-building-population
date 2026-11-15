@@ -1,0 +1,37 @@
+[
+  {
+    "file": "respopagesex2026.xlsx",
+    "url": "https://www.singstat.gov.sg/files/976b7278-e255-435e-90a6-e6658561caa4.xlsx",
+    "retrieved_date": "2026-11-15",
+    "bytes": 2445176,
+    "sha256": "44598bd7cc8af69cd5b65ed30b4305a7285f210aeaced1f72def787b3add574d"
+  },
+  {
+    "file": "respopagesex2026.zip",
+    "url": "https://www.singstat.gov.sg/files/593998d7-7249-4081-bbf0-567bf0a82df5.zip",
+    "retrieved_date": "2026-11-15",
+    "bytes": 210829,
+    "sha256": "fb6700244897db45cee742e9b52f2f26e3ec19ffa40c2bb4009ea7f4ef3b416b"
+  },
+  {
+    "file": "respopagesex2025.xlsx",
+    "url": "https://www.singstat.gov.sg/files/f06975f4-56b5-4eb8-8e32-b10b78eee9c7.xlsx",
+    "retrieved_date": "2026-11-15",
+    "bytes": 2478678,
+    "sha256": "e72e431514c59348aa83afac0be1da0c2992db9149cd4d151dd19de914fb725d"
+  },
+  {
+    "file": "respopagesex2025.zip",
+    "url": "https://www.singstat.gov.sg/files/d480fc2d-2e10-4108-a8ce-e8488afaed3d.zip",
+    "retrieved_date": "2026-11-15",
+    "bytes": 211902,
+    "sha256": "2475d4cef57f125b9e7480d335dcbbfea0a59c1f4ec57596507d486146df2ae5"
+  },
+  {
+    "file": "singstat_latest_data.html",
+    "url": "https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data",
+    "retrieved_date": "2026-11-15",
+    "bytes": 505161,
+    "sha256": "bd4d47ea2e5aa55a78b3a0ecdfc169181dfa6c14301618c3691ee0e321da6d55"
+  }
+]

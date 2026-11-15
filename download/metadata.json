@@ -1,0 +1,58 @@
+{
+  "title": "Singapore building-level resident population estimates",
+  "snapshot_date": "2026-11-15",
+  "format": "GeoJSON FeatureCollection",
+  "coordinate_reference_system": "WGS84 / EPSG:4326; longitude, latitude",
+  "coordinate_decimal_places": 7,
+  "geometry": "MultiPolygon building footprints",
+  "feature_count": 118782,
+  "residential_feature_count": 85007,
+  "scope": "All records in the source building inventory, including non-residential buildings; not a complete-coverage claim.",
+  "population_definition": "Singapore residents (citizens and permanent residents), end June; not all persons.",
+  "population_unit": "persons; fractional model estimates",
+  "population_years": {
+    "2025": {
+      "field": "resident_pop_2025",
+      "allocated_residents": 4204560.0,
+      "null_buildings": 38,
+      "status": "vintage_matched"
+    },
+    "2026": {
+      "field": "resident_pop_2026_provisional",
+      "allocated_residents": 4231650.0,
+      "null_buildings": 38,
+      "status": "provisional_MP2025_controls_on_MP2019_polygons"
+    }
+  },
+  "null_definition": "Unallocated/unknown; never replace with zero without inspecting allocation_status.",
+  "subzone_geometries": "MP2019; building assignment uses centroid in EPSG:3414 before export reprojection.",
+  "method": "Published subzone total times eligible residential GFA share within that subzone.",
+  "source_population_page": "https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data",
+  "source_building_input": {
+    "filename": "sg_buildings_3414.gpkg",
+    "sha256": "a9b41ceb12f5a8c3238cb68520f788ed895b0947149ac3055e60f32f55b982a2"
+  },
+  "calibrated_input_sha256": "ac7af85af115356515e7f1f6ace5b3926969eb7666cb6a77a7dc9baa8b7e9eb0",
+  "files": [
+    {
+      "file": "singapore_building_population.geojson",
+      "bytes": 78991959,
+      "sha256": "4bd4b72f7bdcd99cc21e30f3dae3d314318ba2a9a3a181b295047263c1de2809"
+    },
+    {
+      "file": "singapore_building_population.geojson.gz",
+      "bytes": 11251287,
+      "sha256": "c43b7da0037e1ed563bce3c5a663293c8cf16f0d0250bfa91a94cca7df050c33"
+    },
+    {
+      "file": "building_population_attributes.csv",
+      "bytes": 21702320,
+      "sha256": "067db952d9f56c9444d010e713db1487fd8db096999e8880ad1e1af133cee9fe"
+    },
+    {
+      "file": "subzone_population_controls.csv",
+      "bytes": 56399,
+      "sha256": "14a098a5da9bc0306f57d9eb35840eac8e69210d7e44da2a19778806101d5bac"
+    }
+  ]
+}

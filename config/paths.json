@@ -1,0 +1,12 @@
+{
+  "snapshot_date": "2026-11-15",
+  "buildings": "data/raw/buildings/sg_buildings_3414.gpkg",
+  "subzones": "data/raw/boundaries/mp2019_subzones.geojson",
+  "mainland_mask": "data/raw/boundaries/mp2025_mainland_mask.geojson",
+  "population_sources": "data/raw/population",
+  "reference_results": "results/reference_20261115",
+  "research_figures": "figures/research",
+  "population_years": [2025, 2026],
+  "mapped_boundary_year": 2019,
+  "population_boundary_years": {"2025": 2019, "2026": 2025}
+}
