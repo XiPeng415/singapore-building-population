@@ -3,6 +3,8 @@
 
 Run from any directory. Original datasets and legacy population code are read-only.
 2026 is explicitly provisional until a verified MP2025 boundary is supplied.
+Building-data credit: Buildings.sg v5, City Syntax Lab, NUS; OpenStreetMap contributors.
+Data, method references and parameter provenance: ../docs/sources_and_attribution.md.
 """
 import argparse
 import hashlib

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Check downloadable files and independently reconstruct the allocation."""
+"""Check downloadable files and independently reconstruct the allocation.
+
+Building inputs: Buildings.sg / City Syntax Lab, NUS; OpenStreetMap contributors.
+Ratios are inherited local assumptions; see ../docs/sources_and_attribution.md.
+"""
 import argparse
 import gzip
 import hashlib

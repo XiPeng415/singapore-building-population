@@ -94,6 +94,11 @@ def main():
         'method': 'Published subzone total times eligible residential GFA share within that subzone.',
         'source_population_page': 'https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data',
         'source_building_input': {'filename': args.building_source.name, 'sha256': sha256(args.building_source)} if args.building_source else None,
+        'source_building_project': 'Buildings.sg v5, City Syntax Lab, National University of Singapore',
+        'source_building_repository': 'https://github.com/City-Syntax/buildings.sg',
+        'source_building_reference_comparison': '../docs/building_source_comparison.json',
+        'source_geometry_credit': 'Copyright OpenStreetMap contributors; upstream ODbL terms apply.',
+        'attribution_document': '../docs/sources_and_attribution.md',
         'calibrated_input_sha256': sha256(args.input),
         'files': [],
     }

@@ -4,6 +4,16 @@
 
 **[进入 download 下载区](../download/README.md)**
 
+## 数据与方法署名
+
+建筑footprint、类型、GFA及建成年份对应 **NUS City Syntax Lab 的 Buildings.sg v5**。已比对全部118,782个ID及人口模型输入属性：全部匹配；118,776条几何在1厘米内对应，另6条几何差异单独记录。上游footprint还应署名 **© OpenStreetMap contributors**，并保留Buildings.sg所列HDB、BCA、URA等来源。居民人口控制数来自 **SingStat**，分区边界来自 **URA**。
+
+人口按住宅建筑面积权重下推属于已有的dasymetric mapping方法体系，现补入 **Mennis（2003）**及 **Biljecki等（2016，TU Delft）**作为方法背景和相关研究。现有代码没有证据表明直接移植了这两篇论文的代码或完整模型，因此不把它们写成已确认的历史采用来源。
+
+住宅份额、28 m²/人和0.94来自旧版本地人口脚本。旧注释只笼统提及URA/HDB，未提供对应各数值的具体出处；28还明确标为用户指定。这些值按本项目假设说明。28与0.94在分区归一化后约掉，类型住宅份额仍影响区内分配。
+
+完整出处及研究贡献对应关系见[来源与署名](sources_and_attribution.md)，文献见[BibTeX](../REFERENCES.bib)。
+
 ## 数据是什么
 
 GeoJSON含118,782条源建筑记录，其中85,007条住宅类别参与人口分配。每栋建筑保存2025年人口与2026年暂定人口，坐标系为WGS84，经度在前、纬度在后。模型将官方subzone居民总量按区内住宅建筑面积权重分配到建筑。

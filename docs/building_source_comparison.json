@@ -1,0 +1,75 @@
+{
+  "upstream_project": "Buildings.sg",
+  "upstream_team": "City Syntax Lab, National University of Singapore",
+  "upstream_repository": "https://github.com/City-Syntax/buildings.sg",
+  "upstream_commit": "b95ccceff59386b72d3a88dfc0cd4141d5b64bc6",
+  "upstream_dataset_archive_url": "https://raw.githubusercontent.com/City-Syntax/buildings.sg/b95ccceff59386b72d3a88dfc0cd4141d5b64bc6/download/sg_buildings_v5.zip",
+  "upstream_archive_sha256": "976f943f16e1cebe59b58d847e0d7856766535590e4cc1eda019e923a299bd66",
+  "upstream_geojson_entry": "sg_buildings_v5.geojson",
+  "upstream_records": 118782,
+  "local_input_records": 118782,
+  "matching_unique_building_ids": 118782,
+  "local_ids_missing_upstream": 0,
+  "upstream_ids_missing_local": 0,
+  "matching_archetype_records": 118782,
+  "matching_built_year_records": 118782,
+  "maximum_gfa_absolute_difference_m2": 0.0,
+  "maximum_geometry_hausdorff_distance_m": 13.568191872780506,
+  "geometry_matches_within_1cm": 118776,
+  "verification_date": "2026-11-15",
+  "scope": "Comparison of IDs, population-model input attributes and footprints; not a claim that every original energy/carbon attribute is identical or that historical download date is known.",
+  "geometry_differences_above_1cm": [
+    {
+      "source_id": "relation/15656426",
+      "hausdorff_distance_m": 2.6641106936956165,
+      "upstream_area_m2": 1126.3584483268928,
+      "local_area_m2": 1126.3584483269656,
+      "upstream_valid": false,
+      "local_valid": true
+    },
+    {
+      "source_id": "relation/15997614",
+      "hausdorff_distance_m": 2.6042534586050867,
+      "upstream_area_m2": 1154.062573662901,
+      "local_area_m2": 1152.964106845809,
+      "upstream_valid": false,
+      "local_valid": true
+    },
+    {
+      "source_id": "relation/17070297",
+      "hausdorff_distance_m": 13.568191872780506,
+      "upstream_area_m2": 1790.3152079258539,
+      "local_area_m2": 1790.3152079258075,
+      "upstream_valid": false,
+      "local_valid": true
+    },
+    {
+      "source_id": "relation/18233384",
+      "hausdorff_distance_m": 0.02975247743065213,
+      "upstream_area_m2": 3036.9523651472928,
+      "local_area_m2": 3036.9036516159326,
+      "upstream_valid": false,
+      "local_valid": true
+    },
+    {
+      "source_id": "relation/18233385",
+      "hausdorff_distance_m": 0.16640914591820644,
+      "upstream_area_m2": 1937.2951981004232,
+      "local_area_m2": 1936.2952186319237,
+      "upstream_valid": false,
+      "local_valid": true
+    },
+    {
+      "source_id": "relation/3885311",
+      "hausdorff_distance_m": 8.699093645931171,
+      "upstream_area_m2": 11630.990661005653,
+      "local_area_m2": 11630.990661005755,
+      "upstream_valid": false,
+      "local_valid": true
+    }
+  ],
+  "historical_download_date": "not recorded in the local input metadata",
+  "local_input_sha256": "a9b41ceb12f5a8c3238cb68520f788ed895b0947149ac3055e60f32f55b982a2",
+  "local_input_filename": "sg_buildings_3414.gpkg",
+  "comparison_method": "Join by unique source id; exact archetype, numeric GFA and construction-year comparison; compare footprint Hausdorff distance after reprojection to EPSG:3414."
+}

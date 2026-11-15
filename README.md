@@ -2,11 +2,15 @@
 
 Building footprint polygons with estimated resident populations for **2025** and **provisional 2026**, allocated from published Singapore subzone totals using residential floor-area weights.
 
-**[Download the GeoJSON and data files →](download/README.md)** · [Method and workflow](docs/methodology.md) · [Code and reproduction](docs/reproduction.md) · [中文说明](docs/README_zh.md)
+**Building data credit:** [Buildings.sg v5](https://github.com/City-Syntax/buildings.sg), **City Syntax Lab, National University of Singapore**, with underlying **© OpenStreetMap contributors**. Population controls: **Singapore Department of Statistics (SingStat)**. Assignment boundaries: **URA**. This project adds the resident-population allocation, calibration, verification and downloadable outputs.
+
+**[Download the GeoJSON and data files →](download/README.md)** · [Sources, research references and attribution](docs/sources_and_attribution.md) · [Method and workflow](docs/methodology.md) · [Code and reproduction](docs/reproduction.md) · [中文说明](docs/README_zh.md)
 
 The dataset contains **118,782 building records**, including **85,007 residential-class records** used by the allocation model. Population estimates sum to **4,204,560 residents in 2025** and **4,231,650 in 2026**. These are sums of published subzone controls; the independently published national totals differ slightly because the source totals are rounded separately.
 
 ![Building-level population distribution and neighbourhood comparisons](figures/01_population_distribution.png)
+
+*Figure data: Buildings.sg / City Syntax Lab, NUS; © OpenStreetMap contributors; SingStat resident-population controls; URA boundaries. Population allocation and figure preparation: this project.*
 
 ## Download
 
@@ -47,10 +51,17 @@ These checks establish calculation consistency. Building-level occupancy accurac
 
 ![Calibration factors, diagnostics and selected subzone examples](figures/02_calibration_patterns.png)
 
+*Figure data: Buildings.sg / City Syntax Lab, NUS; © OpenStreetMap contributors; SingStat resident-population controls; URA boundaries. Calibration and figure preparation: this project.*
+
 ## Sources and attribution
 
+- **Buildings.sg / City Syntax Lab, NUS:** building geometry and model inputs are attributed to [Buildings.sg v5](https://github.com/City-Syntax/buildings.sg). All 118,782 input IDs, archetypes, GFA values and construction-year attributes match the pinned upstream snapshot; 118,776 footprints match within 1 cm after reprojection. Six geometry differences are recorded in the [source comparison](docs/building_source_comparison.json). The local input is a processed version, rather than a byte-identical copy of the upstream GeoJSON.
+- **OpenStreetMap contributors:** Buildings.sg identifies OSM as its core footprint/height source. The [OSM attribution and ODbL terms](https://www.openstreetmap.org/copyright) apply to that source data. Buildings.sg also acknowledges HDB, BCA and URA inputs; these are inherited upstream credits, rather than separate downloads performed by this population pipeline.
 - [SingStat: Geographic Distribution](https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data), June 2025 and June 2026 resident population tables. Exact snapshot URLs and SHA256 are recorded in [`data/raw/population/manifest.json`](data/raw/population/manifest.json).
 - [URA: Master Plan 2019 Subzone Boundary No Sea](https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view), used for building-to-subzone assignment.
-- Building geometry and attributes come from the research's compiled input inventory. The current input checksum is recorded in [metadata](download/metadata.json); complete upstream attribution has not yet been established. No new redistribution licence is assigned by this repository.
+
+**Methodological context:** population redistribution with ancillary spatial weights is established dasymetric mapping; see [Mennis (2003)](https://doi.org/10.1111/0033-0124.10042). Building floorspace/volume as population proxies is discussed by [Biljecki et al. (2016), TU Delft](https://doi.org/10.1371/journal.pone.0156808). These references document the method family and related research; the reviewed scripts do not establish that either paper's code or full model was directly adopted. The residential-share ratios, 28 m²/person and 0.94 are inherited local modeling assumptions, with their provenance described in the [attribution notes](docs/sources_and_attribution.md#parameter-provenance).
+
+[Full attribution](docs/sources_and_attribution.md) · [BibTeX references](REFERENCES.bib) · [Third-party notices](THIRD_PARTY_NOTICES.md). Upstream data terms remain applicable; this repository does not relicense all inputs under a single software licence.
 
 Snapshot: **15 November 2026**. The data are annual-population estimates, rather than Census 2020 counts. When referring to the 2026 layer, retain the provisional geography status.

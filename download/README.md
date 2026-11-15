@@ -4,6 +4,8 @@ This folder contains **GeoJSON building footprint polygons with modelled residen
 
 本文件夹提供**新加坡建筑级居民人口估计 GeoJSON**。空间单位为建筑 footprint 多边形，每条 feature 对应一条源建筑记录；人口是分区总量约束下的模型估计。
 
+**Source credits / 来源署名:** Building data: **Buildings.sg v5, City Syntax Lab, National University of Singapore**, with **© OpenStreetMap contributors** and the upstream sources acknowledged by Buildings.sg. Annual population controls: **SingStat**. Assignment boundaries: **URA MP2019**. This project produces the population allocation fields. [Full attribution and method references](../docs/sources_and_attribution.md) · [Third-party data terms](../THIRD_PARTY_NOTICES.md).
+
 | Download | Description |
 |---|---|
 | [singapore_building_population.geojson](singapore_building_population.geojson?raw=1) | 75.33 MiB; ready to open in QGIS, ArcGIS or GeoPandas; contains 2025 and provisional 2026 population |

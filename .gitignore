@@ -3,6 +3,8 @@
 !/.gitignore
 !/README.md
 !/requirements.txt
+!/REFERENCES.bib
+!/THIRD_PARTY_NOTICES.md
 !/config/
 /config/*
 !/config/paths.json

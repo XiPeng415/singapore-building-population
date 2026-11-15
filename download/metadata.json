@@ -54,5 +54,10 @@
       "bytes": 56399,
       "sha256": "14a098a5da9bc0306f57d9eb35840eac8e69210d7e44da2a19778806101d5bac"
     }
-  ]
+  ],
+  "source_building_project": "Buildings.sg v5, City Syntax Lab, National University of Singapore",
+  "source_building_repository": "https://github.com/City-Syntax/buildings.sg",
+  "source_building_reference_comparison": "../docs/building_source_comparison.json",
+  "source_geometry_credit": "Copyright OpenStreetMap contributors; upstream ODbL terms apply.",
+  "attribution_document": "../docs/sources_and_attribution.md"
 }
