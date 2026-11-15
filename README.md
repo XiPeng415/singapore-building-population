@@ -2,7 +2,7 @@
 
 Building footprint polygons with estimated resident populations for **2025** and **provisional 2026**, allocated from published Singapore subzone totals using residential floor-area weights.
 
-**Building data credit:** [Buildings.sg v5](https://github.com/City-Syntax/buildings.sg), **City Syntax Lab, National University of Singapore**, with underlying **© OpenStreetMap contributors**. Population controls: **Singapore Department of Statistics (SingStat)**. Assignment boundaries: **URA**. This project adds the resident-population allocation, calibration, verification and downloadable outputs.
+**Building data credit:** [**Buildings.sg v5 / City Syntax Lab, National University of Singapore**](https://buildings.sg/), with underlying [**© OpenStreetMap contributors**](https://www.openstreetmap.org/copyright). Population controls: [**Singapore Department of Statistics (SingStat)**](https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data). Assignment boundaries: [**URA**](https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view). This project adds the resident-population allocation, calibration, verification and downloadable outputs.
 
 **[Download the GeoJSON and data files →](download/README.md)** · [Sources, research references and attribution](docs/sources_and_attribution.md) · [Method and workflow](docs/methodology.md) · [Code and reproduction](docs/reproduction.md) · [中文说明](docs/README_zh.md)
 
@@ -54,6 +54,17 @@ These checks establish calculation consistency. Building-level occupancy accurac
 *Figure data: Buildings.sg / City Syntax Lab, NUS; © OpenStreetMap contributors; SingStat resident-population controls; URA boundaries. Calibration and figure preparation: this project.*
 
 ## Sources and attribution
+
+### Project and source links
+
+| Resource | Full URL |
+|---|---|
+| Population project — GitHub | [https://github.com/XiPeng415/singapore-building-population](https://github.com/XiPeng415/singapore-building-population) |
+| Buildings.sg — City Syntax Lab, NUS | [https://buildings.sg/](https://buildings.sg/) |
+| Buildings.sg upstream data repository | [https://github.com/City-Syntax/buildings.sg](https://github.com/City-Syntax/buildings.sg) |
+| OpenStreetMap contributors | [https://www.openstreetmap.org/copyright](https://www.openstreetmap.org/copyright) |
+| SingStat — resident-population source | [https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data](https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data) |
+| URA — MP2019 subzone boundaries | [https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view](https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view) |
 
 - **Buildings.sg / City Syntax Lab, NUS:** building geometry and model inputs are attributed to [Buildings.sg v5](https://github.com/City-Syntax/buildings.sg). All 118,782 input IDs, archetypes, GFA values and construction-year attributes match the pinned upstream snapshot; 118,776 footprints match within 1 cm after reprojection. Six geometry differences are recorded in the [source comparison](docs/building_source_comparison.json). The local input is a processed version, rather than a byte-identical copy of the upstream GeoJSON.
 - **OpenStreetMap contributors:** Buildings.sg identifies OSM as its core footprint/height source. The [OSM attribution and ODbL terms](https://www.openstreetmap.org/copyright) apply to that source data. Buildings.sg also acknowledges HDB, BCA and URA inputs; these are inherited upstream credits, rather than separate downloads performed by this population pipeline.

@@ -2,6 +2,15 @@
 
 This page records which inputs and tools are used, how the population allocation relates to prior research, and which assumptions belong to the local research implementation.
 
+## Project and source links
+
+- Population dataset and workflow — GitHub: [https://github.com/XiPeng415/singapore-building-population](https://github.com/XiPeng415/singapore-building-population)
+- Buildings.sg — City Syntax Lab, NUS: [https://buildings.sg/](https://buildings.sg/)
+- Buildings.sg upstream data repository: [https://github.com/City-Syntax/buildings.sg](https://github.com/City-Syntax/buildings.sg)
+- OpenStreetMap contributors: [https://www.openstreetmap.org/copyright](https://www.openstreetmap.org/copyright)
+- SingStat — resident-population controls: [https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data](https://www.singstat.gov.sg/find-data/explore-data-themes/population/geographic-distribution/latest-news-data)
+- URA — MP2019 subzone boundaries: [https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view](https://data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view)
+
 ## Source-to-step mapping
 
 | Source or contributor | Role in this project | Attribution status |
